@@ -1,6 +1,6 @@
 ---
 title: "Legrand ZLGP17/ZLGP18 control via MQTT"
-description: "Integrate your Legrand ZLGP17/ZLGP18 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Legrand ZLGP17/ZLGP18 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2021-09-02T18:14:38Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | ZLGP17/ZLGP18  |
-| Vendor  | Legrand  |
+| Vendor  | [Legrand](/supported-devices/#v=Legrand)  |
 | Description | Wireless and batteryless (double) lighting control |
 | Exposes | action, linkquality |
-| Picture | ![Legrand ZLGP17/ZLGP18](https://www.zigbee2mqtt.io/images/devices/ZLGP17-ZLGP18.jpg) |
+| Picture | ![Legrand ZLGP17/ZLGP18](https://www.zigbee2mqtt.io/images/devices/ZLGP17-ZLGP18.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -45,6 +45,7 @@ Note: each side of the device is treated as a single ZLGP17.
 
 This device can work on any channel, not only 11. For this, please refer to the [Legrand ZLGP18 manual chapter 6.2](https://www.admin.legrandoc.com/files/documents/S000112516EN-00.pdf).
 <!-- Notes END: Do not edit below this line -->
+
 
 
 

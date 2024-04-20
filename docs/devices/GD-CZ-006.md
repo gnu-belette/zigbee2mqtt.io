@@ -1,6 +1,6 @@
 ---
 title: "Gledopto GD-CZ-006 control via MQTT"
-description: "Integrate your Gledopto GD-CZ-006 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Gledopto GD-CZ-006 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2019-07-22T20:08:17Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | GD-CZ-006  |
-| Vendor  | Gledopto  |
+| Vendor  | [Gledopto](/supported-devices/#v=Gledopto)  |
 | Description | Zigbee LED Controller WW/CW |
 | Exposes | light (state, brightness), effect, linkquality |
-| Picture | ![Gledopto GD-CZ-006](https://www.zigbee2mqtt.io/images/devices/GD-CZ-006.jpg) |
+| Picture | ![Gledopto GD-CZ-006](https://www.zigbee2mqtt.io/images/devices/GD-CZ-006.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -34,10 +34,13 @@ pageClass: device-page
 <!-- Notes END: Do not edit below this line -->
 
 
+
 ## Options
 *[How to use device type specific configuration](../guide/configuration/devices-groups.md#specific-device-options)*
 
 * `transition`: Controls the transition time (in seconds) of on/off, brightness, color temperature (if applicable) and color (if applicable) changes. Defaults to `0` (no transition). The value must be a number with a minimum value of `0`
+
+* `state_action`: State actions will also be published as 'action' when true (default false). The value must be `true` or `false`
 
 
 ## Exposes

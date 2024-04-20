@@ -1,6 +1,6 @@
 ---
 title: "DIYRuZ DIYRuZ_magnet control via MQTT"
-description: "Integrate your DIYRuZ DIYRuZ_magnet via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your DIYRuZ DIYRuZ_magnet via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2019-11-09T18:37:38Z
 pageClass: device-page
 ---
@@ -16,23 +16,24 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | DIYRuZ_magnet  |
-| Vendor  | DIYRuZ  |
-| Description | [DIYRuZ contact sensor](https://modkam.ru/?p=1220) |
+| Vendor  | [DIYRuZ](/supported-devices/#v=DIYRuZ)  |
+| Description | DIYRuZ contact sensor |
 | Exposes | battery, contact, linkquality |
-| Picture | ![DIYRuZ DIYRuZ_magnet](https://www.zigbee2mqtt.io/images/devices/DIYRuZ_magnet.jpg) |
+| Picture | ![DIYRuZ DIYRuZ_magnet](https://www.zigbee2mqtt.io/images/devices/DIYRuZ_magnet.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
-
-
+## Notes
+[DIYRuZ contact sensor](https://modkam.ru/?p=1220)
 <!-- Notes END: Do not edit below this line -->
+
 
 
 
 ## Exposes
 
 ### Battery (numeric)
-Remaining battery in %.
+Remaining battery in %, can take up to 24 hours before reported.
 Value can be found in the published state on the `battery` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `0` and the maximum value is `100`.

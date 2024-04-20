@@ -1,6 +1,6 @@
 ---
 title: "Blaupunkt SCM-S1 control via MQTT"
-description: "Integrate your Blaupunkt SCM-S1 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Blaupunkt SCM-S1 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2019-07-22T20:08:17Z
 pageClass: device-page
 ---
@@ -16,16 +16,17 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | SCM-S1  |
-| Vendor  | Blaupunkt  |
+| Vendor  | [Blaupunkt](/supported-devices/#v=Blaupunkt)  |
 | Description | Roller shutter |
 | Exposes | cover (state, position), linkquality |
-| Picture | ![Blaupunkt SCM-S1](https://www.zigbee2mqtt.io/images/devices/SCM-S1.jpg) |
+| Picture | ![Blaupunkt SCM-S1](https://www.zigbee2mqtt.io/images/devices/SCM-S1.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
 
 
 <!-- Notes END: Do not edit below this line -->
+
 
 
 ## Options

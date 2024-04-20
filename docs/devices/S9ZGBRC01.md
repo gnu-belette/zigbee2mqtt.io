@@ -1,6 +1,6 @@
 ---
 title: "Smart9 S9ZGBRC01 control via MQTT"
-description: "Integrate your Smart9 S9ZGBRC01 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Smart9 S9ZGBRC01 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2020-04-08T17:49:06Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | S9ZGBRC01  |
-| Vendor  | Smart9  |
+| Vendor  | [Smart9](/supported-devices/#v=Smart9)  |
 | Description | Smart remote controller |
 | Exposes | battery, action, linkquality |
-| Picture | ![Smart9 S9ZGBRC01](https://www.zigbee2mqtt.io/images/devices/S9ZGBRC01.jpg) |
+| Picture | ![Smart9 S9ZGBRC01](https://www.zigbee2mqtt.io/images/devices/S9ZGBRC01.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -29,10 +29,11 @@ pageClass: device-page
 
 
 
+
 ## Exposes
 
 ### Battery (numeric)
-Remaining battery in %.
+Remaining battery in %, can take up to 24 hours before reported.
 Value can be found in the published state on the `battery` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `0` and the maximum value is `100`.

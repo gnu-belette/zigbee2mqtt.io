@@ -1,6 +1,6 @@
 ---
 title: "Visonic MCT-350 SMA control via MQTT"
-description: "Integrate your Visonic MCT-350 SMA via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Visonic MCT-350 SMA via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2019-07-22T20:08:17Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | MCT-350 SMA  |
-| Vendor  | Visonic  |
+| Vendor  | [Visonic](/supported-devices/#v=Visonic)  |
 | Description | Magnetic door & window contact sensor |
-| Exposes | contact, battery_low, tamper, linkquality |
-| Picture | ![Visonic MCT-350 SMA](https://www.zigbee2mqtt.io/images/devices/MCT-350-SMA.jpg) |
+| Exposes | contact, battery_low, tamper, temperature, linkquality |
+| Picture | ![Visonic MCT-350 SMA](https://www.zigbee2mqtt.io/images/devices/MCT-350-SMA.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -27,6 +27,14 @@ pageClass: device-page
 
 <!-- Notes END: Do not edit below this line -->
 
+
+
+## Options
+*[How to use device type specific configuration](../guide/configuration/devices-groups.md#specific-device-options)*
+
+* `temperature_calibration`: Calibrates the temperature value (absolute offset), takes into effect on next report of device. The value must be a number.
+
+* `temperature_precision`: Number of digits after decimal point for temperature, takes into effect on next report of device. This option can only decrease the precision, not increase it. The value must be a number with a minimum value of `0` and with a with a maximum value of `3`
 
 
 ## Exposes
@@ -37,17 +45,23 @@ Value can be found in the published state on the `contact` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 If value equals `false` contact is ON, if `true` OFF.
 
-### Battery_low (binary)
+### Battery low (binary)
 Indicates if the battery of this device is almost empty.
 Value can be found in the published state on the `battery_low` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
-If value equals `true` battery_low is ON, if `false` OFF.
+If value equals `true` battery low is ON, if `false` OFF.
 
 ### Tamper (binary)
 Indicates whether the device is tampered.
 Value can be found in the published state on the `tamper` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 If value equals `true` tamper is ON, if `false` OFF.
+
+### Temperature (numeric)
+Measured temperature value.
+Value can be found in the published state on the `temperature` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The unit of this value is `°C`.
 
 ### Linkquality (numeric)
 Link quality (signal strength).

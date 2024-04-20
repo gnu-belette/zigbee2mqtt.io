@@ -1,6 +1,6 @@
 ---
 title: "Lonsonho QS-Zigbee-C01 control via MQTT"
-description: "Integrate your Lonsonho QS-Zigbee-C01 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Lonsonho QS-Zigbee-C01 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2021-01-31T22:24:43Z
 pageClass: device-page
 ---
@@ -16,16 +16,17 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | QS-Zigbee-C01  |
-| Vendor  | Lonsonho  |
+| Vendor  | [Lonsonho](/supported-devices/#v=Lonsonho)  |
 | Description | Curtain/blind motor controller |
 | Exposes | cover (state, position), moving, calibration, motor_reversal, calibration_time, linkquality |
-| Picture | ![Lonsonho QS-Zigbee-C01](https://www.zigbee2mqtt.io/images/devices/QS-Zigbee-C01.jpg) |
+| Picture | ![Lonsonho QS-Zigbee-C01](https://www.zigbee2mqtt.io/images/devices/QS-Zigbee-C01.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
 
 
 <!-- Notes END: Do not edit below this line -->
+
 
 
 ## Options
@@ -53,17 +54,17 @@ To read (`/get`) the value publish a message to topic `zigbee2mqtt/FRIENDLY_NAME
 To write (`/set`) a value publish a message to topic `zigbee2mqtt/FRIENDLY_NAME/set` with payload `{"calibration": NEW_VALUE}`.
 If value equals `ON` calibration is ON, if `OFF` OFF.
 
-### Motor_reversal (binary)
+### Motor reversal (binary)
 Value can be found in the published state on the `motor_reversal` property.
 To read (`/get`) the value publish a message to topic `zigbee2mqtt/FRIENDLY_NAME/get` with payload `{"motor_reversal": ""}`.
 To write (`/set`) a value publish a message to topic `zigbee2mqtt/FRIENDLY_NAME/set` with payload `{"motor_reversal": NEW_VALUE}`.
-If value equals `ON` motor_reversal is ON, if `OFF` OFF.
+If value equals `ON` motor reversal is ON, if `OFF` OFF.
 
-### Calibration_time (numeric)
+### Calibration time (numeric)
 Calibration time.
 Value can be found in the published state on the `calibration_time` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
-The unit of this value is `S`.
+The unit of this value is `s`.
 
 ### Linkquality (numeric)
 Link quality (signal strength).

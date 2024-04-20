@@ -1,6 +1,6 @@
 ---
 title: "TERNCY TERNCY-SD01 control via MQTT"
-description: "Integrate your TERNCY TERNCY-SD01 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your TERNCY TERNCY-SD01 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2020-02-26T17:45:15Z
 pageClass: device-page
 ---
@@ -16,15 +16,20 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | TERNCY-SD01  |
-| Vendor  | TERNCY  |
+| Vendor  | [TERNCY](/supported-devices/#v=TERNCY)  |
 | Description | Knob smart dimmer |
 | Exposes | battery, action, direction, linkquality |
-| Picture | ![TERNCY TERNCY-SD01](https://www.zigbee2mqtt.io/images/devices/TERNCY-SD01.jpg) |
+| Picture | ![TERNCY TERNCY-SD01](https://www.zigbee2mqtt.io/images/devices/TERNCY-SD01.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
 ## Notes
 
+### Channel
+This device [does not work](https://github.com/Koenkk/zigbee2mqtt/discussions/7259#discussioncomment-6012304) on Zigbee channel 20-24.
+
+### Pairing
+Press and hold the knob on the device for 8 seconds (until the indicator blinks blue light 3 times) the indicator will continue blinking blue light if pairing is successful otherwise it will blink red light.
 
 ### Deprecated click event
 By default this device exposes a deprecated `click` event. It's recommended to use the `action` event instead.
@@ -39,6 +44,7 @@ devices:
 ```
 <!-- Notes END: Do not edit below this line -->
 
+
 ## OTA updates
 This device supports OTA updates, for more information see [OTA updates](../guide/usage/ota_updates.md).
 
@@ -52,7 +58,7 @@ This device supports OTA updates, for more information see [OTA updates](../guid
 ## Exposes
 
 ### Battery (numeric)
-Remaining battery in %.
+Remaining battery in %, can take up to 24 hours before reported.
 Value can be found in the published state on the `battery` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `0` and the maximum value is `100`.

@@ -1,6 +1,6 @@
 ---
 title: "Leedarson 8A-SS-BA-H0 control via MQTT"
-description: "Integrate your Leedarson 8A-SS-BA-H0 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Leedarson 8A-SS-BA-H0 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2021-11-30T20:10:17
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | 8A-SS-BA-H0  |
-| Vendor  | Leedarson  |
+| Vendor  | [Leedarson](/supported-devices/#v=Leedarson)  |
 | Description | Motion Sensor |
 | Exposes | battery, occupancy, linkquality |
-| Picture | ![Leedarson 8A-SS-BA-H0](https://www.zigbee2mqtt.io/images/devices/8A-SS-BA-H0.jpg) |
+| Picture | ![Leedarson 8A-SS-BA-H0](https://www.zigbee2mqtt.io/images/devices/8A-SS-BA-H0.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -29,10 +29,11 @@ pageClass: device-page
 
 
 
+
 ## Exposes
 
 ### Battery (numeric)
-Remaining battery in %.
+Remaining battery in %, can take up to 24 hours before reported.
 Value can be found in the published state on the `battery` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `0` and the maximum value is `100`.

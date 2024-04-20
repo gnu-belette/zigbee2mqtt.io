@@ -1,6 +1,6 @@
 ---
 title: "Feibit SCA01ZB control via MQTT"
-description: "Integrate your Feibit SCA01ZB via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Feibit SCA01ZB via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2020-04-08T17:49:06Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | SCA01ZB  |
-| Vendor  | Feibit  |
+| Vendor  | [Feibit](/supported-devices/#v=Feibit)  |
 | Description | Smart carbon monoxide sensor |
 | Exposes | carbon_monoxide, battery_low, tamper, battery, linkquality |
-| Picture | ![Feibit SCA01ZB](https://www.zigbee2mqtt.io/images/devices/SCA01ZB.jpg) |
+| Picture | ![Feibit SCA01ZB](https://www.zigbee2mqtt.io/images/devices/SCA01ZB.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -29,19 +29,20 @@ pageClass: device-page
 
 
 
+
 ## Exposes
 
-### Carbon_monoxide (binary)
+### Carbon monoxide (binary)
 Indicates if CO (carbon monoxide) is detected.
 Value can be found in the published state on the `carbon_monoxide` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
-If value equals `true` carbon_monoxide is ON, if `false` OFF.
+If value equals `true` carbon monoxide is ON, if `false` OFF.
 
-### Battery_low (binary)
+### Battery low (binary)
 Indicates if the battery of this device is almost empty.
 Value can be found in the published state on the `battery_low` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
-If value equals `true` battery_low is ON, if `false` OFF.
+If value equals `true` battery low is ON, if `false` OFF.
 
 ### Tamper (binary)
 Indicates whether the device is tampered.
@@ -50,7 +51,7 @@ It's not possible to read (`/get`) or write (`/set`) this value.
 If value equals `true` tamper is ON, if `false` OFF.
 
 ### Battery (numeric)
-Remaining battery in %.
+Remaining battery in %, can take up to 24 hours before reported.
 Value can be found in the published state on the `battery` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `0` and the maximum value is `100`.

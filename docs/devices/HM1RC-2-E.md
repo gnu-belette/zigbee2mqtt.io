@@ -1,6 +1,6 @@
 ---
 title: "HEIMAN HM1RC-2-E control via MQTT"
-description: "Integrate your HEIMAN HM1RC-2-E via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your HEIMAN HM1RC-2-E via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2021-02-03T17:47:43Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | HM1RC-2-E  |
-| Vendor  | HEIMAN  |
+| Vendor  | [HEIMAN](/supported-devices/#v=HEIMAN)  |
 | Description | Smart remote controller |
 | Exposes | battery, action, linkquality |
-| Picture | ![HEIMAN HM1RC-2-E](https://www.zigbee2mqtt.io/images/devices/HM1RC-2-E.jpg) |
+| Picture | ![HEIMAN HM1RC-2-E](https://www.zigbee2mqtt.io/images/devices/HM1RC-2-E.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -29,10 +29,11 @@ pageClass: device-page
 
 
 
+
 ## Exposes
 
 ### Battery (numeric)
-Remaining battery in %.
+Remaining battery in %, can take up to 24 hours before reported.
 Value can be found in the published state on the `battery` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `0` and the maximum value is `100`.
@@ -42,7 +43,7 @@ The unit of this value is `%`.
 Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
-The possible values are: `emergency`, `disarm`, `arm_partial_zones`, `arm_all_zones`.
+The possible values are: `emergency`, `disarm`, `arm_day_zones`, `arm_all_zones`.
 
 ### Linkquality (numeric)
 Link quality (signal strength).

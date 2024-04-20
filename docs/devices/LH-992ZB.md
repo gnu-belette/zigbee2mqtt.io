@@ -1,6 +1,6 @@
 ---
 title: "iHORN LH-992ZB control via MQTT"
-description: "Integrate your iHORN LH-992ZB via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your iHORN LH-992ZB via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2019-12-15T17:27:48Z
 pageClass: device-page
 ---
@@ -16,16 +16,17 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | LH-992ZB  |
-| Vendor  | iHORN  |
+| Vendor  | [iHORN](/supported-devices/#v=iHORN)  |
 | Description | Motion sensor |
 | Exposes | occupancy, battery_low, tamper, linkquality |
-| Picture | ![iHORN LH-992ZB](https://www.zigbee2mqtt.io/images/devices/LH-992ZB.jpg) |
+| Picture | ![iHORN LH-992ZB](https://www.zigbee2mqtt.io/images/devices/LH-992ZB.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
 
 
 <!-- Notes END: Do not edit below this line -->
+
 
 
 
@@ -37,11 +38,11 @@ Value can be found in the published state on the `occupancy` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 If value equals `true` occupancy is ON, if `false` OFF.
 
-### Battery_low (binary)
+### Battery low (binary)
 Indicates if the battery of this device is almost empty.
 Value can be found in the published state on the `battery_low` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
-If value equals `true` battery_low is ON, if `false` OFF.
+If value equals `true` battery low is ON, if `false` OFF.
 
 ### Tamper (binary)
 Indicates whether the device is tampered.

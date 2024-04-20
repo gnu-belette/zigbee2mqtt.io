@@ -1,6 +1,6 @@
 ---
 title: "SONOFF SNZB-01 control via MQTT"
-description: "Integrate your SONOFF SNZB-01 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your SONOFF SNZB-01 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2020-07-10T21:02:58Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | SNZB-01  |
-| Vendor  | SONOFF  |
+| Vendor  | [SONOFF](/supported-devices/#v=SONOFF)  |
 | Description | Wireless button |
-| Exposes | battery, action, linkquality |
-| Picture | ![SONOFF SNZB-01](https://www.zigbee2mqtt.io/images/devices/SNZB-01.jpg) |
+| Exposes | battery, action, voltage, linkquality |
+| Picture | ![SONOFF SNZB-01](https://www.zigbee2mqtt.io/images/devices/SNZB-01.png) |
 | White-label | eWeLink RHK07 |
 
 
@@ -34,10 +34,11 @@ The reset button can be found by removing the back cover.
 
 
 
+
 ## Exposes
 
 ### Battery (numeric)
-Remaining battery in %.
+Remaining battery in %, can take up to 24 hours before reported.
 Value can be found in the published state on the `battery` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `0` and the maximum value is `100`.
@@ -48,6 +49,12 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `single`, `double`, `long`.
+
+### Voltage (numeric)
+Voltage of the battery in millivolts.
+Value can be found in the published state on the `voltage` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The unit of this value is `mV`.
 
 ### Linkquality (numeric)
 Link quality (signal strength).

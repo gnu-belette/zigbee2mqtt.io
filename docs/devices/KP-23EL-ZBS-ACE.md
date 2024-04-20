@@ -1,6 +1,6 @@
 ---
 title: "Climax KP-23EL-ZBS-ACE control via MQTT"
-description: "Integrate your Climax KP-23EL-ZBS-ACE via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Climax KP-23EL-ZBS-ACE via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2021-10-30T12:58:50
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | KP-23EL-ZBS-ACE  |
-| Vendor  | Climax  |
+| Vendor  | [Climax](/supported-devices/#v=Climax)  |
 | Description | Remote Keypad |
 | Exposes | battery_low, tamper, action, linkquality |
-| Picture | ![Climax KP-23EL-ZBS-ACE](https://www.zigbee2mqtt.io/images/devices/KP-23EL-ZBS-ACE.jpg) |
+| Picture | ![Climax KP-23EL-ZBS-ACE](https://www.zigbee2mqtt.io/images/devices/KP-23EL-ZBS-ACE.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -29,13 +29,14 @@ pageClass: device-page
 
 
 
+
 ## Exposes
 
-### Battery_low (binary)
+### Battery low (binary)
 Indicates if the battery of this device is almost empty.
 Value can be found in the published state on the `battery_low` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
-If value equals `true` battery_low is ON, if `false` OFF.
+If value equals `true` battery low is ON, if `false` OFF.
 
 ### Tamper (binary)
 Indicates whether the device is tampered.

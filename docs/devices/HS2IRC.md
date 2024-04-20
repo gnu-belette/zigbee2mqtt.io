@@ -1,6 +1,6 @@
 ---
 title: "HEIMAN HS2IRC control via MQTT"
-description: "Integrate your HEIMAN HS2IRC via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your HEIMAN HS2IRC via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2020-09-30T20:52:56Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | HS2IRC  |
-| Vendor  | HEIMAN  |
+| Vendor  | [HEIMAN](/supported-devices/#v=HEIMAN)  |
 | Description | Smart IR Control |
 | Exposes | battery, linkquality |
-| Picture | ![HEIMAN HS2IRC](https://www.zigbee2mqtt.io/images/devices/HS2IRC.jpg) |
+| Picture | ![HEIMAN HS2IRC](https://www.zigbee2mqtt.io/images/devices/HS2IRC.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -152,10 +152,11 @@ Request:
 
 
 
+
 ## Exposes
 
 ### Battery (numeric)
-Remaining battery in %.
+Remaining battery in %, can take up to 24 hours before reported.
 Value can be found in the published state on the `battery` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `0` and the maximum value is `100`.

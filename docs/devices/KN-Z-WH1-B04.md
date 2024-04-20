@@ -1,6 +1,6 @@
 ---
 title: "LUX KN-Z-WH1-B04 control via MQTT"
-description: "Integrate your LUX KN-Z-WH1-B04 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your LUX KN-Z-WH1-B04 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2021-09-01T18:11:17Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | KN-Z-WH1-B04  |
-| Vendor  | LUX  |
+| Vendor  | [LUX](/supported-devices/#v=LUX)  |
 | Description | KONOz thermostat |
 | Exposes | climate (occupied_heating_setpoint, occupied_cooling_setpoint, local_temperature, system_mode, running_state, fan_mode), linkquality |
-| Picture | ![LUX KN-Z-WH1-B04](https://www.zigbee2mqtt.io/images/devices/KN-Z-WH1-B04.jpg) |
+| Picture | ![LUX KN-Z-WH1-B04](https://www.zigbee2mqtt.io/images/devices/KN-Z-WH1-B04.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -28,10 +28,11 @@ pageClass: device-page
 <!-- Notes END: Do not edit below this line -->
 
 
+
 ## Options
 *[How to use device type specific configuration](../guide/configuration/devices-groups.md#specific-device-options)*
 
-* `thermostat_unit`: Controls the temperature unit of the themrostat (default celsius). The value must be one of `celsius`, `fahrenheit`
+* `thermostat_unit`: Controls the temperature unit of the thermostat (default celsius). The value must be one of `celsius`, `fahrenheit`
 
 
 ## Exposes

@@ -1,6 +1,6 @@
 ---
 title: "Livolo TI0001-curtain-switch control via MQTT"
-description: "Integrate your Livolo TI0001-curtain-switch via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Livolo TI0001-curtain-switch via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2021-11-30T20:10:17
 pageClass: device-page
 ---
@@ -16,16 +16,17 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | TI0001-curtain-switch  |
-| Vendor  | Livolo  |
+| Vendor  | [Livolo](/supported-devices/#v=Livolo)  |
 | Description | Zigbee curtain switch (can only read status, control does not work yet) |
 | Exposes | switch (state), linkquality |
-| Picture | ![Livolo TI0001-curtain-switch](https://www.zigbee2mqtt.io/images/devices/TI0001-curtain-switch.jpg) |
+| Picture | ![Livolo TI0001-curtain-switch](https://www.zigbee2mqtt.io/images/devices/TI0001-curtain-switch.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
 
 
 <!-- Notes END: Do not edit below this line -->
+
 
 
 

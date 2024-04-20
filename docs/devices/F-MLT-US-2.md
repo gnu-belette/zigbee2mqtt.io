@@ -1,6 +1,6 @@
 ---
 title: "SmartThings F-MLT-US-2 control via MQTT"
-description: "Integrate your SmartThings F-MLT-US-2 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your SmartThings F-MLT-US-2 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2019-07-22T20:08:17Z
 pageClass: device-page
 ---
@@ -16,24 +16,27 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | F-MLT-US-2  |
-| Vendor  | SmartThings  |
+| Vendor  | [SmartThings](/supported-devices/#v=SmartThings)  |
 | Description | Multipurpose sensor (2016 model) |
 | Exposes | temperature, contact, battery_low, tamper, battery, moving, x_axis, y_axis, z_axis, linkquality |
-| Picture | ![SmartThings F-MLT-US-2](https://www.zigbee2mqtt.io/images/devices/F-MLT-US-2.jpg) |
+| Picture | ![SmartThings F-MLT-US-2](https://www.zigbee2mqtt.io/images/devices/F-MLT-US-2.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
+## Notes
 
-
+### Pairing
+When pairing, make sure to keep the sensor awake for 20 seconds by opening and closing the contact every second.
 <!-- Notes END: Do not edit below this line -->
+
 
 
 ## Options
 *[How to use device type specific configuration](../guide/configuration/devices-groups.md#specific-device-options)*
 
-* `temperature_precision`: Number of digits after decimal point for temperature, takes into effect on next report of device. The value must be a number with a minimum value of `0` and with a with a maximum value of `3`
-
 * `temperature_calibration`: Calibrates the temperature value (absolute offset), takes into effect on next report of device. The value must be a number.
+
+* `temperature_precision`: Number of digits after decimal point for temperature, takes into effect on next report of device. This option can only decrease the precision, not increase it. The value must be a number with a minimum value of `0` and with a with a maximum value of `3`
 
 
 ## Exposes
@@ -50,11 +53,11 @@ Value can be found in the published state on the `contact` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 If value equals `false` contact is ON, if `true` OFF.
 
-### Battery_low (binary)
+### Battery low (binary)
 Indicates if the battery of this device is almost empty.
 Value can be found in the published state on the `battery_low` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
-If value equals `true` battery_low is ON, if `false` OFF.
+If value equals `true` battery low is ON, if `false` OFF.
 
 ### Tamper (binary)
 Indicates whether the device is tampered.
@@ -63,7 +66,7 @@ It's not possible to read (`/get`) or write (`/set`) this value.
 If value equals `true` tamper is ON, if `false` OFF.
 
 ### Battery (numeric)
-Remaining battery in %.
+Remaining battery in %, can take up to 24 hours before reported.
 Value can be found in the published state on the `battery` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `0` and the maximum value is `100`.
@@ -75,17 +78,17 @@ Value can be found in the published state on the `moving` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 If value equals `true` moving is ON, if `false` OFF.
 
-### X_axis (numeric)
+### X axis (numeric)
 Accelerometer X value.
 Value can be found in the published state on the `x_axis` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 
-### Y_axis (numeric)
+### Y axis (numeric)
 Accelerometer Y value.
 Value can be found in the published state on the `y_axis` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 
-### Z_axis (numeric)
+### Z axis (numeric)
 Accelerometer Z value.
 Value can be found in the published state on the `z_axis` property.
 It's not possible to read (`/get`) or write (`/set`) this value.

@@ -1,6 +1,6 @@
 ---
 title: "Trust ZYCT-202 control via MQTT"
-description: "Integrate your Trust ZYCT-202 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Trust ZYCT-202 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2019-07-22T20:08:17Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | ZYCT-202  |
-| Vendor  | Trust  |
+| Vendor  | [Trust](/supported-devices/#v=Trust)  |
 | Description | Remote control |
-| Exposes | action, linkquality |
-| Picture | ![Trust ZYCT-202](https://www.zigbee2mqtt.io/images/devices/ZYCT-202.jpg) |
+| Exposes | action, action_group, linkquality |
+| Picture | ![Trust ZYCT-202](https://www.zigbee2mqtt.io/images/devices/ZYCT-202.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -37,6 +37,7 @@ Press and hold the smart group button (button with two bulbs) and wait until the
 <!-- Notes END: Do not edit below this line -->
 
 
+
 ## Options
 *[How to use device type specific configuration](../guide/configuration/devices-groups.md#specific-device-options)*
 
@@ -50,6 +51,11 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `on`, `off`, `stop`, `brightness_stop`, `brightness_move_up`, `brightness_move_down`.
+
+### Action group (numeric)
+Group where the action was triggered on.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
 
 ### Linkquality (numeric)
 Link quality (signal strength).

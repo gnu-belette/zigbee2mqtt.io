@@ -1,6 +1,6 @@
 ---
 title: "ORVIBO CR11S8UZ control via MQTT"
-description: "Integrate your ORVIBO CR11S8UZ via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your ORVIBO CR11S8UZ via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2019-11-09T18:37:38Z
 pageClass: device-page
 ---
@@ -16,16 +16,17 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | CR11S8UZ  |
-| Vendor  | ORVIBO  |
+| Vendor  | [ORVIBO](/supported-devices/#v=ORVIBO)  |
 | Description | Smart sticker switch |
 | Exposes | action, linkquality |
-| Picture | ![ORVIBO CR11S8UZ](https://www.zigbee2mqtt.io/images/devices/CR11S8UZ.jpg) |
+| Picture | ![ORVIBO CR11S8UZ](https://www.zigbee2mqtt.io/images/devices/CR11S8UZ.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
 
 
 <!-- Notes END: Do not edit below this line -->
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Zemismart ZM-RM02 control via MQTT"
-description: "Integrate your Zemismart ZM-RM02 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Zemismart ZM-RM02 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2021-12-24T21:49:06Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | ZM-RM02  |
-| Vendor  | Zemismart  |
+| Vendor  | [Zemismart](/supported-devices/#v=Zemismart)  |
 | Description | Smart 6 key scene switch |
-| Exposes | action, linkquality |
-| Picture | ![Zemismart ZM-RM02](https://www.zigbee2mqtt.io/images/devices/ZM-RM02.jpg) |
+| Exposes | battery, action, linkquality |
+| Picture | ![Zemismart ZM-RM02](https://www.zigbee2mqtt.io/images/devices/ZM-RM02.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -29,7 +29,15 @@ pageClass: device-page
 
 
 
+
 ## Exposes
+
+### Battery (numeric)
+Remaining battery in %, can take up to 24 hours before reported.
+Value can be found in the published state on the `battery` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `100`.
+The unit of this value is `%`.
 
 ### Action (enum)
 Triggered action (e.g. a button click).

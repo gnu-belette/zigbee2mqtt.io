@@ -1,6 +1,6 @@
 ---
 title: "Perenio PECWS01 control via MQTT"
-description: "Integrate your Perenio PECWS01 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Perenio PECWS01 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2021-11-04T17:22:41
 pageClass: device-page
 ---
@@ -16,16 +16,17 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | PECWS01  |
-| Vendor  | Perenio  |
+| Vendor  | [Perenio](/supported-devices/#v=Perenio)  |
 | Description | Door sensor |
-| Exposes | contact, battery, linkquality |
-| Picture | ![Perenio PECWS01](https://www.zigbee2mqtt.io/images/devices/PECWS01.jpg) |
+| Exposes | contact, battery, voltage, linkquality |
+| Picture | ![Perenio PECWS01](https://www.zigbee2mqtt.io/images/devices/PECWS01.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
 
 
 <!-- Notes END: Do not edit below this line -->
+
 
 
 
@@ -38,11 +39,17 @@ It's not possible to read (`/get`) or write (`/set`) this value.
 If value equals `false` contact is ON, if `true` OFF.
 
 ### Battery (numeric)
-Remaining battery in %.
+Remaining battery in %, can take up to 24 hours before reported.
 Value can be found in the published state on the `battery` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `0` and the maximum value is `100`.
 The unit of this value is `%`.
+
+### Voltage (numeric)
+Voltage of the battery in millivolts.
+Value can be found in the published state on the `voltage` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The unit of this value is `mV`.
 
 ### Linkquality (numeric)
 Link quality (signal strength).

@@ -1,6 +1,6 @@
 ---
 title: "Konke 2AJZ4KPDR control via MQTT"
-description: "Integrate your Konke 2AJZ4KPDR via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Konke 2AJZ4KPDR via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2019-11-09T18:37:38Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | 2AJZ4KPDR  |
-| Vendor  | Konke  |
+| Vendor  | [Konke](/supported-devices/#v=Konke)  |
 | Description | Contact sensor |
 | Exposes | contact, battery_low, tamper, battery, linkquality |
-| Picture | ![Konke 2AJZ4KPDR](https://www.zigbee2mqtt.io/images/devices/2AJZ4KPDR.jpg) |
+| Picture | ![Konke 2AJZ4KPDR](https://www.zigbee2mqtt.io/images/devices/2AJZ4KPDR.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -32,6 +32,7 @@ Konke devices only work on Zigbee channel 15, 20 and 25.
 
 
 
+
 ## Exposes
 
 ### Contact (binary)
@@ -40,11 +41,11 @@ Value can be found in the published state on the `contact` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 If value equals `false` contact is ON, if `true` OFF.
 
-### Battery_low (binary)
+### Battery low (binary)
 Indicates if the battery of this device is almost empty.
 Value can be found in the published state on the `battery_low` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
-If value equals `true` battery_low is ON, if `false` OFF.
+If value equals `true` battery low is ON, if `false` OFF.
 
 ### Tamper (binary)
 Indicates whether the device is tampered.
@@ -53,7 +54,7 @@ It's not possible to read (`/get`) or write (`/set`) this value.
 If value equals `true` tamper is ON, if `false` OFF.
 
 ### Battery (numeric)
-Remaining battery in %.
+Remaining battery in %, can take up to 24 hours before reported.
 Value can be found in the published state on the `battery` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `0` and the maximum value is `100`.

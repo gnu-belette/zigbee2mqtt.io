@@ -1,6 +1,6 @@
 ---
 title: "SmartThings STS-PRS-251 control via MQTT"
-description: "Integrate your SmartThings STS-PRS-251 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your SmartThings STS-PRS-251 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2019-07-22T20:08:17Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | STS-PRS-251  |
-| Vendor  | SmartThings  |
+| Vendor  | [SmartThings](/supported-devices/#v=SmartThings)  |
 | Description | Arrival sensor |
 | Exposes | battery, presence, action, beep, linkquality |
-| Picture | ![SmartThings STS-PRS-251](https://www.zigbee2mqtt.io/images/devices/STS-PRS-251.jpg) |
+| Picture | ![SmartThings STS-PRS-251](https://www.zigbee2mqtt.io/images/devices/STS-PRS-251.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -37,6 +37,7 @@ pageClass: device-page
 <!-- Notes END: Do not edit below this line -->
 
 
+
 ## Options
 *[How to use device type specific configuration](../guide/configuration/devices-groups.md#specific-device-options)*
 
@@ -48,7 +49,7 @@ pageClass: device-page
 ## Exposes
 
 ### Battery (numeric)
-Remaining battery in %.
+Remaining battery in %, can take up to 24 hours before reported.
 Value can be found in the published state on the `battery` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `0` and the maximum value is `100`.

@@ -11,10 +11,10 @@ Zigbee2MQTT requires a MQTT-Server connection to operate.
 ```yaml
 # Required: MQTT settings
 mqtt:
-  # Required: MQTT base topic for Zigbee2MQTT MQTT messages
-  base_topic: zigbee2mqtt
   # Required: MQTT server URL (use mqtts:// for SSL/TLS connection)
   server: 'mqtt://localhost:1883'
+  # Optional: MQTT base topic for Zigbee2MQTT MQTT messages (default: zigbee2mqtt)
+  base_topic: zigbee2mqtt
   # Optional: absolute path to SSL/TLS certificate of CA used to sign server and client certificates (default: nothing)
   ca: '/etc/ssl/mqtt-ca.crt'
   # Optional: absolute paths to SSL/TLS key and certificate for client-authentication (default: nothing)
@@ -41,9 +41,9 @@ mqtt:
   force_disable_retain: false
 ```
 
-### Specifying MQTT user/password and network_key in a different file
+### Specifying MQTT server/user/password and network_key in a different file
 
-To specify the MQTT user/password in a different file, e.g `secret.yaml`, use the following
+To specify the MQTT server/user/password in a different file, e.g `secret.yaml`, use the following
 configuration.
 
 **configuration.yaml**
@@ -51,13 +51,15 @@ configuration.
 ```yaml
 # IMPORTANT: Don't forget the quotes!
 mqtt:
-  user: '!secret user'
-  password: '!secret password'
+  server: '!secret.yaml server'
+  user: '!secret.yaml user'
+  password: '!secret.yaml password'
 ```
 
 **secret.yaml**
 
 ```yaml
+server: 'mqtt://localhost:1883'
 user: mqtt_user
 password: mqtt_password
 ```
@@ -83,12 +85,6 @@ advanced:
   report: true
   # Optional: disables the legacy api (default: shown below)
   legacy_api: true
-```
-
-## MQTT payload format
-
-```yaml
-experimental:
   # Optional: MQTT output type: json, attribute or attribute_and_json (default: shown below)
   # Examples when 'state' of a device is published
   # json: topic: 'zigbee2mqtt/my_bulb' payload '{"state": "ON"}'

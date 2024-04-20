@@ -1,6 +1,6 @@
 ---
 title: "FrankEver FK_V02 control via MQTT"
-description: "Integrate your FrankEver FK_V02 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your FrankEver FK_V02 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2021-05-01T14:47:09Z
 pageClass: device-page
 ---
@@ -16,16 +16,17 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | FK_V02  |
-| Vendor  | FrankEver  |
+| Vendor  | [FrankEver](/supported-devices/#v=FrankEver)  |
 | Description | Zigbee smart water valve |
 | Exposes | switch (state), threshold, timer, linkquality |
-| Picture | ![FrankEver FK_V02](https://www.zigbee2mqtt.io/images/devices/FK_V02.jpg) |
+| Picture | ![FrankEver FK_V02](https://www.zigbee2mqtt.io/images/devices/FK_V02.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
 
 
 <!-- Notes END: Do not edit below this line -->
+
 
 
 
@@ -50,7 +51,7 @@ Value can be found in the published state on the `timer` property.
 It's not possible to read (`/get`) this value.
 To write (`/set`) a value publish a message to topic `zigbee2mqtt/FRIENDLY_NAME/set` with payload `{"timer": NEW_VALUE}`.
 The minimal value is `0` and the maximum value is `600`.
-The unit of this value is `minutes`.
+The unit of this value is `min`.
 
 ### Linkquality (numeric)
 Link quality (signal strength).

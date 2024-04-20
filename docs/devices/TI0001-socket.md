@@ -1,6 +1,6 @@
 ---
 title: "Livolo TI0001-socket control via MQTT"
-description: "Integrate your Livolo TI0001-socket via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Livolo TI0001-socket via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2020-06-10T16:45:59Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | TI0001-socket  |
-| Vendor  | Livolo  |
+| Vendor  | [Livolo](/supported-devices/#v=Livolo)  |
 | Description | Zigbee socket |
 | Exposes | switch (state), linkquality |
-| Picture | ![Livolo TI0001-socket](https://www.zigbee2mqtt.io/images/devices/TI0001-socket.jpg) |
+| Picture | ![Livolo TI0001-socket](https://www.zigbee2mqtt.io/images/devices/TI0001-socket.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -50,6 +50,7 @@ advanced:
   pan_id: 6756
 ```
 <!-- Notes END: Do not edit below this line -->
+
 
 
 
